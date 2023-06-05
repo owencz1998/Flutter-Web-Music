@@ -1,0 +1,37 @@
+//@version=4
+study("Fibonacci and RSA Indicator", shorttitle="Fibonacci & RSA", overlay=true)
+
+// تعریف سطوح فیبوناچی
+fibonacciLevels = [0.0, 0.236, 0.382, 0.618, 1.0]
+
+// تعریف تابع RSA
+rsiSource = close
+rsiLength = 14
+overboughtLevel = 70
+oversoldLevel = 30
+rsi = rsi(rsiSource, rsiLength)
+
+// محاسبه سطوح قیمتی بر اساس سطوح فیبوناچی
+highLevel = highest(high)
+lowLevel = lowest(low)
+priceRange = highLevel - lowLevel
+fibonacciBuyLevel = lowLevel + (fibonacciLevels[3] * priceRange)
+
+// تشخیص و شرط خرید بر اساس سطوح فیبوناچی و روش تحلیل تکنیکال رسا
+buyCondition = crossover(close, fibonacciBuyLevel) and rsi < oversoldLevel
+
+// ترسیم خطوط و شرط خرید
+plot(fibonacciBuyLevel, "Fibonacci Buy Level", color=color.green, linewidth=2, transp=0)
+plotshape(buyCondition, title="Buy Signal", location=location.belowbar, color=color.green, style=shape.label, text="BUY")
+
+// قوانین مدیریت سفارشات و استراتژی خرید و فروش را می‌توانید به کد اضافه کنید
+
+// محاسبه سطوح قیمتی بر اساس سطوح فیبوناچی
+fibonacciSellLevel = highLevel - (fibonacciLevels[3] * priceRange)
+
+// تشخیص و شرط فروش بر اساس سطوح فیبوناچی و روش تحلیل تکنیکال رسا
+sellCondition = crossunder(close, fibonacciSellLevel) and rsi > overboughtLevel
+
+// ترسیم خطوط و شرط فروش
+plot(fibonacciSellLevel, "Fibonacci Sell Level", color=color.red, linewidth=2, transp=0)
+plotshape(sellCondition, title="Sell Signal", location=location.abovebar, color=color.red, style=shape.label, text="SELL")
