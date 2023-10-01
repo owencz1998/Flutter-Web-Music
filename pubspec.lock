@@ -13,10 +13,10 @@ packages:
     dependency: "direct main"
     description:
       name: audioplayers
-      sha256: c0f2396a28fac0ebcc9afd465395b14f72ba4f310e5fd62506d9bafca31b53fb
+      sha256: d018bd35c61674da6eb73328798a96d7683af88e59076e76769686dc446ef6d0
       url: "https://pub.dev"
     source: hosted
-    version: "0.15.1"
+    version: "0.17.4"
   bloc:
     dependency: "direct main"
     description:
@@ -105,6 +105,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.3.1"
+  ffi:
+    dependency: transitive
+    description:
+      name: ffi
+      sha256: "13a6ccf6a459a125b3fcdb6ec73bd5ff90822e071207c663bfd1f70062d51d18"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.2.1"
   file:
     dependency: transitive
     description:
@@ -204,10 +212,10 @@ packages:
     dependency: "direct main"
     description:
       name: path_provider
-      sha256: d5aeaf96ca92dc95deeef64d17d01d2e86b847f499e05324ee1a5eaa77d48064
+      sha256: "90ea926097957ffbcb5381fdd7de76f6d5326fcd4689f07d8d4ee42b4040fa85"
       url: "https://pub.dev"
     source: hosted
-    version: "1.6.11"
+    version: "1.6.28"
   path_provider_linux:
     dependency: transitive
     description:
@@ -228,10 +236,18 @@ packages:
     dependency: transitive
     description:
       name: path_provider_platform_interface
-      sha256: f034a281145343268e0469af7ae61fedb182c862e06acab7a476f9e378f113d3
+      sha256: e06b2d369e0eb863cf0c4876d0fb6943846876f7e51b2752059a5c6b05bf5354
       url: "https://pub.dev"
     source: hosted
-    version: "1.0.2"
+    version: "1.0.4"
+  path_provider_windows:
+    dependency: transitive
+    description:
+      name: path_provider_windows
+      sha256: "16dfc776bde4b7952901316ca518780dbd3758777152eb9632958008e0338d54"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.0.5"
   platform:
     dependency: transitive
     description:
@@ -337,10 +353,10 @@ packages:
     dependency: transitive
     description:
       name: uuid
-      sha256: "467d0a24f490ff58b4b921d31576a41eebffab7c4da7ceef450e9c4c6c9a9e99"
+      sha256: bd96a5d86e807b44cac699f9735ef29d1e3354a96f4b2f7152000bae4c6d81b0
       url: "https://pub.dev"
     source: hosted
-    version: "2.2.0"
+    version: "2.2.2"
   vector_math:
     dependency: transitive
     description:
@@ -349,6 +365,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.1.4"
+  win32:
+    dependency: transitive
+    description:
+      name: win32
+      sha256: c0e3a4f7be7dae51d8f152230b86627e3397c1ba8c3fa58e63d44a9f3edc9cef
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.6.1"
   xdg_directories:
     dependency: transitive
     description:
