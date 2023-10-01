@@ -1,17 +1,12 @@
-import 'dart:async';
 
 //import 'package:audioplayers/audioplayers.dart';
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:rxdart/rxdart.dart';
 import 'package:web_music/bloc/music_bloc.dart';
 import 'package:web_music/bloc/music_state.dart';
 import 'package:web_music/model/music_model.dart';
 import 'package:web_music/util/MyColor.dart';
 import 'package:web_music/util/style.dart';
-import 'dart:js' as js;
 
 class NowPlaying extends StatefulWidget {
   @override

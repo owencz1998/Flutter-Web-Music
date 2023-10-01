@@ -1,12 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:web_music/model/music_model.dart';
 import 'package:web_music/util/list_repository.dart';
 import 'package:web_music/util/size.dart';
-import 'package:web_music/util/style.dart';
 import 'package:web_music/widget/playin_section.dart';
 import 'package:web_music/widget/popular_item.dart';
 
-import 'now_playing.dart';
 
 class SectionBottom extends StatelessWidget {
 

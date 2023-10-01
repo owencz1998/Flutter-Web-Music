@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:web_music/util/style.dart';
 import 'package:web_music/widget/now_playing.dart';
 
-import 'now_playing.dart';
 
 class Playing extends StatefulWidget {
   @override

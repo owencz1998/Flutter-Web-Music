@@ -2,8 +2,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:web_music/util/size.dart';
 import 'package:web_music/util/style.dart';
-import 'package:web_music/widget/most_popular.dart';
-import 'package:web_music/widget/playin_section.dart';
 
 class SecondMain extends StatelessWidget {
   var wid;

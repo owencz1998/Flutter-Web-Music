@@ -1,7 +1,5 @@
-import 'dart:html';
 
 import 'package:flutter/material.dart';
-import 'package:web_music/bloc/music_bloc.dart';
 import 'package:web_music/model/music_model.dart';
 import 'package:web_music/util/MyColor.dart';
 import 'package:web_music/util/list_repository.dart';
@@ -10,7 +8,6 @@ import 'package:web_music/util/style.dart';
 import 'package:web_music/widget/billboard_item.dart';
 import 'package:web_music/widget/now_playing.dart';
 
-import 'now_playing.dart';
 
 class TopChart extends StatefulWidget {
   @override
