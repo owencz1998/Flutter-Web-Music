@@ -13,10 +13,10 @@ packages:
     dependency: "direct main"
     description:
       name: audioplayers
-      sha256: c0f2396a28fac0ebcc9afd465395b14f72ba4f310e5fd62506d9bafca31b53fb
+      sha256: d018bd35c61674da6eb73328798a96d7683af88e59076e76769686dc446ef6d0
       url: "https://pub.dev"
     source: hosted
-    version: "0.15.1"
+    version: "0.17.4"
   bloc:
     dependency: "direct main"
     description:
@@ -353,10 +353,10 @@ packages:
     dependency: transitive
     description:
       name: uuid
-      sha256: "467d0a24f490ff58b4b921d31576a41eebffab7c4da7ceef450e9c4c6c9a9e99"
+      sha256: bd96a5d86e807b44cac699f9735ef29d1e3354a96f4b2f7152000bae4c6d81b0
       url: "https://pub.dev"
     source: hosted
-    version: "2.2.0"
+    version: "2.2.2"
   vector_math:
     dependency: transitive
     description:
